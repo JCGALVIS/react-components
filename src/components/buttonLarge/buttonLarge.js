@@ -5,6 +5,7 @@ class ButtonLarge extends Component {
     render() {
         const {
             color,
+            nameClass,
             id,
             name,
             onClick,
@@ -14,6 +15,7 @@ class ButtonLarge extends Component {
         return (
             <Button
                 color={color}
+                nameClass={nameClass}
                 display="block"
                 id={id}
                 name={name}

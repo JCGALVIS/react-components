@@ -8,7 +8,6 @@ class App extends Component {
   handleClick (e) {
     console.log(e)
     console.log(e.nativeEvent)
-    var btnPrueba = document.getElementById('btnPrueba');
     alert('Hi here!')
   }
 

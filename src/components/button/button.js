@@ -5,6 +5,7 @@ class Button extends Component {
     render() {
         const {
             color,
+            nameClass,
             display,
             id,
             name,
@@ -15,7 +16,7 @@ class Button extends Component {
 
         return (
             <button 
-                className={`button ${ color }`}
+                className={`button ${ color } ${nameClass}`}
                 id={id}
                 name={name}
                 onClick={onClick}
