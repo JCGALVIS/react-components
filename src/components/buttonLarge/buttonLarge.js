@@ -5,6 +5,8 @@ class ButtonLarge extends Component {
     render() {
         const {
             color,
+            id,
+            name,
             onClick,
             text
         } = this.props;
@@ -13,6 +15,8 @@ class ButtonLarge extends Component {
             <Button
                 color={color}
                 display="block"
+                id={id}
+                name={name}
                 onClick={onClick}
                 text={text}
                 width="100%"

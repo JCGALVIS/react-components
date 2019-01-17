@@ -1,0 +1,15 @@
+.input{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    height: 34px;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 6px 12px;
+    line-height: inherit;
+    box-sizing: border-box;
+    font: inherit;
+    color: #555;
+}

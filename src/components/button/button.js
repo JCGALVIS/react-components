@@ -6,6 +6,8 @@ class Button extends Component {
         const {
             color,
             display,
+            id,
+            name,
             onClick,
             text,
             width
@@ -14,6 +16,8 @@ class Button extends Component {
         return (
             <button 
                 className={`button ${ color }`}
+                id={id}
+                name={name}
                 onClick={onClick}
                 style={{display: display, width: width}}
             >
