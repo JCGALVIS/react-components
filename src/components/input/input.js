@@ -6,6 +6,7 @@ class Input extends Component{
         const{
             id,
             name,
+            nameClass,
             placeHolder,
             type,
             value
@@ -13,7 +14,7 @@ class Input extends Component{
 
         return(
             <input 
-                className="input"
+                className={`input ${nameClass}`}
                 id={id}
                 name={name}
                 placeholder={placeHolder}
