@@ -7,6 +7,7 @@ class Input extends Component{
             id,
             name,
             nameClass,
+            onChange,
             placeHolder,
             type,
             value
@@ -17,6 +18,7 @@ class Input extends Component{
                 className={`input ${nameClass}`}
                 id={id}
                 name={name}
+                onChange={onChange}
                 placeholder={placeHolder}
                 type={type}
                 value={value}
