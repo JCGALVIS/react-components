@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Container from './components/container/container';
 import Button from './components/button/button';
 import ButtonLarge from './components/buttonLarge/buttonLarge'
 import Input from './components/input/input'
@@ -8,6 +9,9 @@ import Tbody from './components/tdoby/tbody'
 import Tcolumn from './components/tcolumn/tcolumn'
 import Trow from './components/trow/trow'
 import Thead from './components/thead/thead';
+import Select from './components/select/select';
+import Option from './components/option/option';
+import ContainerChildren from './components/containerChildren/containerChildren';
 
 class App extends Component {
   constructor(){
@@ -25,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Container>
         <div style={{ paddingLeft: 16, paddingRight: 16 }}>
           <Input type='text' onChange={e => this.setState({ intputText: e.target.value })} placeHolder='Insert to data' value={this.state.intputText}/>
         </div>
@@ -59,6 +64,26 @@ class App extends Component {
             </Trow>
           </Tbody>
         </Table>
+
+        <ContainerChildren width="50%" float="left">
+          <Select id="Select" height="34px">
+            <Option value="">Seleccionar</Option>
+            <Option value="value1">Value 1</Option>
+            <Option value="value2">Value 2</Option>
+            <Option value="value3">Value 3</Option>
+            <Option value="value4">Value 4</Option>
+          </Select>
+          </ContainerChildren>
+          <ContainerChildren width="50%" float="left">
+          <Select id="Select" multiple>
+            <Option value="value1">Value 1</Option>
+            <Option value="value2">Value 2</Option>
+            <Option value="value3">Value 3</Option>
+          </Select>
+        </ContainerChildren>
+        
+
+        </Container>
       </div>
     );
   }
