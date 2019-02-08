@@ -1,0 +1,12 @@
+.navLink {
+    font-family:Arial;
+    margin-right:10px;
+    text-align:center;
+    display: inline-block;
+}
+
+.navLink :hover{
+    color: #fff;
+    background-color: #0069d9;
+    border-radius: 6px;
+}
