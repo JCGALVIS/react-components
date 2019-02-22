@@ -18,7 +18,8 @@ import NavLink from './components/navLink/navLink';
 import NavA from './components/nava/nava';
 import Image from './components/image/image';
 import img1 from './Assets/img/descarga.jpg';
-import img2 from './Assets/img/images.jpg';
+//import img2 from './Assets/img/images.jpg';
+import logo from '../src/logo.svg'
 
 class App extends Component {
   constructor() {
@@ -35,35 +36,35 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div class="App">
 
-        <Nav height="50px">
-          <NavItem font="Arial" fontColor="white" fontSize="15px" width="10%" float="left">
-            ESTE ES EL NAV
+
+        <Nav>
+          <NavItem width="32%" float="right">
+            <NavLink ><NavA href="./">BOTON</NavA></NavLink>
+            <NavLink ><NavA href="./">FORMULARIO</NavA></NavLink>
+            <NavLink ><NavA href="./">TABLA</NavA></NavLink>
+            <NavLink ><NavA href="./">IMAGEN</NavA></NavLink>
           </NavItem>
-          <NavItem width="30%">
-            <NavLink font="cursive"><NavA href="./">HOME</NavA></NavLink>
-            <NavLink ><NavA href="./">CONTAINER</NavA></NavLink>
-            <NavLink ><NavA href="./">ABOUT</NavA></NavLink>
-          </NavItem>
-          <NavItem width="10%" float="right">
-            <Image src={img2}
-                   nameClass = "imageUser"
-              />
-            
+
+          <NavItem float="left">
+            <Image src={logo}
+              nameClass="logo"
+            />
+
           </NavItem>
         </Nav>
 
         <Container>
-          
-        <Input type='text' onChange={e => this.setState({ intputText: e.target.value })} placeHolder='Insert to data' value={this.state.intputText} />
+
+          <Input type='text' onChange={e => this.setState({ intputText: e.target.value })} placeHolder='Insert to data' value={this.state.intputText} />
           <ContainerChildren width="50%" >
             <Button color="blue" text="Blue" />
             <Button color="green" text="Green" />
             <Button color="red" text="Red" />
             <Button text="Sin color" />
           </ContainerChildren>
-          
+
           <ContainerChildren width="33%" float="left">
             <ButtonLarge color="blue" text="Prueba de boton largo" />
           </ContainerChildren>
@@ -72,33 +73,33 @@ class App extends Component {
           </ContainerChildren>
           <ContainerChildren width="33%" float="left">
             <ButtonLarge text="Prueba de boton largo" onClick={this.handleClick} />
-          </ContainerChildren>         
+          </ContainerChildren>
 
           <ContainerChildren>
-           <Table id='tbNombre'>
-             <Thead>
-               <Trow>
-                 <Tcolumn isTitle>#</Tcolumn>
-                 <Tcolumn isTitle>Nombre</Tcolumn>
-                 <Tcolumn isTitle>Apellido</Tcolumn>
-                 <Tcolumn isTitle>Identificación</Tcolumn>
-               </Trow>
-             </Thead>
+            <Table id='tbNombre'>
+              <Thead>
+                <Trow>
+                  <Tcolumn isTitle>#</Tcolumn>
+                  <Tcolumn isTitle>Nombre</Tcolumn>
+                  <Tcolumn isTitle>Apellido</Tcolumn>
+                  <Tcolumn isTitle>Identificación</Tcolumn>
+                </Trow>
+              </Thead>
               <Tbody>
-              <Trow>
-                 <Tcolumn>1</Tcolumn>
-                 <Tcolumn>Juan</Tcolumn>
+                <Trow>
+                  <Tcolumn>1</Tcolumn>
+                  <Tcolumn>Juan</Tcolumn>
                   <Tcolumn>Galvis</Tcolumn>
                   <Tcolumn>145548855</Tcolumn>
-              </Trow>
-              <Trow>
-                <Tcolumn>2</Tcolumn>
-                <Tcolumn>Pepito</Tcolumn>
-                <Tcolumn>Perez</Tcolumn>
-                <Tcolumn>5466365586</Tcolumn>
-              </Trow>
-            </Tbody>
-           </Table>
+                </Trow>
+                <Trow>
+                  <Tcolumn>2</Tcolumn>
+                  <Tcolumn>Pepito</Tcolumn>
+                  <Tcolumn>Perez</Tcolumn>
+                  <Tcolumn>5466365586</Tcolumn>
+                </Trow>
+              </Tbody>
+            </Table>
           </ContainerChildren>
 
           <ContainerChildren width="50%" float="left">
@@ -117,11 +118,11 @@ class App extends Component {
             </Select>
           </ContainerChildren>
           <ContainerChildren>
-            <Image src={img1} 
-                   alt="Esta es una imagen de prueba" 
-                   title="Esta imagen es bonita"
-                   width="400"
-              />
+            <Image src={img1}
+              alt="Esta es una imagen de prueba"
+              title="Esta imagen es bonita"
+              width="400"
+            />
           </ContainerChildren>
 
 

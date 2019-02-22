@@ -1,12 +1,13 @@
 .navLink {
     font-family:Arial;
-    margin-right:10px;
+    font-size:14px;
+    margin-right:8%;
     text-align:center;
     display: inline-block;
+    padding: 4% 0;
+
 }
 
 .navLink :hover{
-    color: #fff;
-    background-color: #0069d9;
-    border-radius: 6px;
-}
+    color:#007bff; 
+}   
