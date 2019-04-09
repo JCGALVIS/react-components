@@ -1,8 +1,7 @@
 .nav{
-  background-color: #007bff;
+  background-color: #F6F6F6;
   overflow:hidden;
-  padding: 0 1% 1% 1%;
+  padding:auto;
   width:auto;
-  margin:0;
-  
+  margin:auto;  
 }
